@@ -1,0 +1,224 @@
+ 
+ /* index page */
+ 
+    body{
+        margin: 0pt;
+        background-image: url(/MySite/images/Bkgrnd.jpg);
+        background-attachment: fixed;
+        background-size: contain;
+        background-clip: content-box;
+        background-position: center;
+        }
+    
+    html{
+        scroll-behavior: smooth;
+        }
+
+    #myBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: red; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+          }
+          
+    #myBtn:hover {
+            background-color: #555; /* Add a dark-grey background on hover */
+          }
+
+
+    #mainHeader{
+    display: flex;
+    justify-content: center;
+    color: #dd0505;
+    background-color: #130202;
+    border-style: hidden;
+    border-color: aliceblue;
+    border-radius: 5px;
+    margin: 0pt;
+    margin-right: 6px;
+    }
+
+        ul {
+        display: block;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: rgba(240, 248, 255, 0);
+        width: 350px;
+        margin: 0;
+        background-color: #130202;
+        list-style-type: none;
+        }
+      
+        li {
+        display: block;
+        box-sizing: border-box;
+        border-style: solid;
+        border-radius:1em;
+        color: #dd0505;
+        }
+      
+            li a {
+            display: block;
+            box-sizing: content-box;
+            border-style: solid;
+            border-radius:1em;
+            border-color: #000000;
+            text-align: center;
+            text-decoration: none;
+            background-color: rgb(107, 8, 8);
+            }
+
+            li a:hover {
+            display: block;
+            box-sizing: border-box;
+            border-style: solid;
+            border-radius: 1em;
+            background-color: rgb(122, 0, 0);
+            }
+
+    .navMenu{
+    display: block;
+    justify-content: flex-start;
+    background-color: #130202;
+    }
+
+
+#Menu {
+    display: flex;
+    background-color: #130202;
+    border-style: solid;
+    border-color: rgba(0, 255, 255, 0);
+    justify-content: center;
+    padding : 5px;
+    width: 250px;
+    height: 62px;
+    }
+
+    /* .navHome {
+        overflow: hidden;
+        width: 150px;
+        background:#860303; 
+        text-align-last: center;
+        margin: auto;
+        padding-bottom:15px;
+        border-radius:1em;
+    } 
+    .navScreenshots {
+        overflow: hidden;
+        width: 150px;
+        background:#550e01;
+        text-align-last: center;
+        margin: auto;
+        padding-bottom:15px;
+        border-radius:1em;
+    }
+
+    .navVideoClips {
+        overflow: hidden;
+        width: 150px;
+        background:#470000;
+        text-align-last: center;
+        margin: auto;
+        padding-bottom:15px;
+        border-radius:1em;
+    } */
+
+.spacer{
+    border-style: hidden;
+    border-color: aliceblue;
+    width: 1914px;
+    height: 50px;
+    clear: both;
+}
+
+
+#aboutMetxt{
+    display: table-column;
+    border-color: #dd0505;
+    border-style: hidden;
+    float: left;
+    width: 840px;
+    height: 400px;
+    padding: 5%;
+    flex: 1;
+}
+
+.slides{
+    float: right;
+    display: flexbox;
+    flex-wrap: wrap-reverse;
+}
+
+
+.videoPlayer{
+margin-left: 50vw; 
+transform: translate(-50%);
+position: relative;
+flex: 1;
+display: inline;
+
+}
+
+.moreinfo{
+    float: left;
+    display: table-cell;
+    border-style: hidden;
+    border-color: aqua;
+    height: 350px;
+    width: 1000px;
+    padding: 3%;
+}
+#Clips{
+    display: flex;
+    border-color: #dd0505;
+    border-style: hidden;
+    float: right;
+    width: 580px;
+    height: 400px;
+    padding: 1%;
+    margin-right: 5px;
+}
+
+#footer{
+    border-style: hidden;
+    text-align: center;
+    border-color: aliceblue;
+    width: 1800px;
+    height: 150px;
+    margin-right: 30px;
+}
+
+.box {
+    background-image: repeating-linear-gradient(125deg, #c52b2b, #c52b2b 0px, transparent 5px, transparent 5px, #c52b2b 8px), repeating-linear-gradient(215deg, #c52b2b, #c52b2b 0px, transparent 5px, transparent 5px, #c52b2b 8px), repeating-linear-gradient(-55deg, #c52b2b, #c52b2b 0px, transparent 5px, transparent 5px, #c52b2b 8px), repeating-linear-gradient(35deg, #c52b2b, #c52b2b 0px, transparent 5px, transparent 5px, #c52b2b 8px);
+    background-size: 4px calc(100% + 13.95px), calc(100% + 13.95px) 4px, 4px calc(100% + 13.95px) , calc(100% + 13.95px) 4px;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-repeat: no-repeat;
+    animation: borderAnimation 0.9s infinite linear reverse;
+    padding: 3%;
+    float: left;
+    width: 840px;
+    height: 300px;
+    }
+    
+    @keyframes borderAnimation {
+    from { background-position: 0 0, -13.95px 0, 100% -13.95px, 0 100%; }
+    to { background-position: 0 -13.95px, 0 0, 100% 0, -13.95px 100%; }
+    }
+
+/* Screenshots Page */
+
+.screenshots{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
