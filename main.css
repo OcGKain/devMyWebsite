@@ -3,7 +3,7 @@
  
     body{
         margin: 0pt;
-        background-image: url(/devMyWebsite/images/Bkgrnd.jpg);
+        background-image: url(devMyWebsite/images/Bkgrnd.jpg);
         background-attachment: fixed;
         background-size: contain;
         background-clip: content-box;
